@@ -58,7 +58,8 @@ class CraftJwtAuth extends Plugin
         parent::init();
         self::$plugin = $this;
 
-        Craft::$app->on(Application::EVENT_INIT, function (Event $event) {
+        // from edenspiekermann/craft-jwt-auth PR https://github.com/edenspiekermann/craft-jwt-auth/pull/14
+        Event::on(Application::class, Application::EVENT_INIT, function (Event $event) {
             $token = self::$plugin->jWT->parseAndVerifyJWT(self::$plugin->jWT->getJWTFromRequest());
 
             // If the token passes verification...
