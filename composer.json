@@ -2,7 +2,7 @@
   "name": "edenspiekermann/craft-jwt-auth",
   "description": "Enable authentication to Craft through the use of JSON Web Tokens (JWT)",
   "type": "craft-plugin",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "keywords": [
     "craft",
     "cms",
@@ -44,5 +44,11 @@
       "jWT": "edenspiekermann\\craftjwtauth\\services\\JWT"
     },
     "class": "edenspiekermann\\craftjwtauth\\CraftJwtAuth"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": false,
+      "craftcms/plugin-installer": false
+    }
   }
 }
