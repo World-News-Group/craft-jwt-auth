@@ -42,11 +42,6 @@ class CraftJwtAuth extends Plugin
     // Public Properties
     // =========================================================================
 
-    /**
-     * @var string
-     */
-    public String $schemaVersion = '0.1.0';
-
     // Public Methods
     // =========================================================================
 
