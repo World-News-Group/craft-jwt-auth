@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 0.2.5 - 2023-12-06
+
+### Changed
+
+removed $schemaVersion definition as it breaks CraftCMS 3.7.63.1+
+
 ## 0.2.0 - 2019-10-06
 
 ### Added
